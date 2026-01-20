@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stellar Nights – Sky Observation Meet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Stellar Nights</h1>
+    <p>Night Sky Observation & Astro-Photography Meet</p>
+</header>
+
+<section>
+    <h2>Event Banner</h2>
+    <img src="banner.jpg" alt="Night Sky Observation Event Banner">
+</section>
+
+<section>
+    <h2>Event Preview Video</h2>
+
+    <video autoplay muted loop controls>
+        <source src="astro.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</section>
+
+
+<section>
+    <h2>Intro Ambience Audio</h2>
+    <audio controls>
+        <source src="skyaudio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</section>
+
+<section>
+    <h2>Participant Registration Form</h2>
+
+    <form>
+        <!-- Name -->
+        <label>Full Name:</label>
+        <input type="text" required>
+
+        <!-- Email -->
+        <label>Email Address:</label>
+        <input type="email" required>
+
+        <!-- Date -->
+        <label>Date of Event:</label>
+        <input type="date" required>
+
+        <!-- Experience Level -->
+        <label>Experience Level:</label>
+        <select required>
+            <option value="">-- Select Level --</option>
+            <option>Beginner</option>
+            <option>Intermediate</option>
+            <option>Advanced</option>
+        </select>
+
+        <!-- Telescope Availability -->
+        <label>Do you own a telescope?</label><br>
+        <input type="radio" name="telescope" required> Yes
+        <input type="radio" name="telescope"> No
+        <br><br>
+
+        <!-- Camera Upload -->
+        <label>Upload Camera Details / Sample Photo:</label>
+        <input type="file" accept=".jpg,.png,.pdf">
+
+        <!-- Notes -->
+        <label>Special Notes / Expectations:</label>
+        <textarea rows="4" placeholder="Tell us what you wish to observe..."></textarea>
+
+        <!-- Submit -->
+        <input type="submit" value="Register for Stellar Nights">
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 Stellar Nights | Explore Beyond the Sky</p>
+</footer>
+
+</body>
+</html>
