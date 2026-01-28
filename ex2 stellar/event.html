@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stellar Nights – Sky Observation Meet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Stellar Nights</h1>
+    <p>Explore the universe with fellow astronomy enthusiasts</p>
+</header>
+
+<section class="intro">
+    <h2>About the Event</h2>
+    <p>
+        Stellar Nights is a guided night-sky observation and astro-photography meet.
+        Participants will explore constellations, planets, and deep-sky objects using
+        professional telescopes under expert supervision.
+    </p>
+</section>
+
+<section class="banner">
+    <img src="banner.jpg" alt="Night Sky Observation Event">
+</section>
+
+<section class="flex-container">
+
+    <!-- Media -->
+    <div class="media-card">
+        <h2>Event Preview</h2>
+
+        <video controls muted loop>
+            <source src="astro.mp4" type="video/mp4">
+        </video>
+
+        <audio controls>
+            <source src="skyaudio.mp3" type="audio/mpeg">
+        </audio>
+
+        <p class="hint">🎧 Use headphones for immersive experience</p>
+    </div>
+
+    <!-- Registration -->
+    <div class="form-card">
+        <h2>Register Now</h2>
+
+        <form>
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter your full name" required>
+
+            <label>Email Address</label>
+            <input type="email" placeholder="example@email.com" required>
+
+            <label>Event Date</label>
+            <input type="date" required>
+
+            <label>Experience Level</label>
+            <select required>
+                <option value="">Select level</option>
+                <option>Beginner</option>
+                <option>Intermediate</option>
+                <option>Advanced</option>
+            </select>
+
+            <label>Do you own a telescope?</label>
+            <div class="radio-group">
+                <label><input type="radio" name="scope" required> Yes</label>
+                <label><input type="radio" name="scope"> No</label>
+            </div>
+
+            <label>Upload Sample Photo</label>
+            <input type="file" accept=".jpg,.png,.pdf">
+
+            <label>Expectations</label>
+            <textarea rows="3" placeholder="What would you like to observe?"></textarea>
+
+            <input type="submit" value="Join Stellar Nights">
+        </form>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 Stellar Nights | Designed for Web Technology Lab</p>
+</footer>
+
+</body>
+</html>
