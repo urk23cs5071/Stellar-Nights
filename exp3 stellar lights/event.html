@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stellar Nights – Responsive Sky Observation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- TC01: Bootstrap 5.3.3 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-bs-theme="dark">
+
+<!-- TC04: Responsive Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-black shadow">
+    <div class="container">
+        <a class="navbar-brand fw-bold text-info" href="#">STELLAR NIGHTS</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#register">Registration</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- TC06: Typography & Spacing (using py-5, display-4) -->
+<header class="text-center py-5 shadow-sm bg-dark bg-gradient">
+    <h1 class="display-4 fw-bold text-info">Stellar Nights</h1>
+    <p class="lead">Night Sky Observation & Astro-Photography Meet 2026</p>
+</header>
+
+<!-- TC03: Grid System (container, row, col) -->
+<main class="container my-5">
+    <div class="row justify-content-center">
+        <!-- TC08 & TC09: Responsive Column widths (col-12 on mobile, col-md-10 on tablet) -->
+        <div class="col-12 col-md-10 col-lg-8">
+
+            <!-- TC05: Responsive Image (.img-fluid) -->
+            <section class="card mb-4 border-info-subtle shadow-lg">
+                <div class="card-body">
+                    <h2 class="h4 mb-3 border-start border-info border-4 ps-2">Event Banner</h2>
+                    <img src="banner.jpg" alt="Event Banner" class="img-fluid rounded">
+                </div>
+            </section>
+
+            <!-- Video Section -->
+            <section class="card mb-4 border-info-subtle shadow-lg">
+                <div class="card-body">
+                    <h2 class="h4 mb-3 border-start border-info border-4 ps-2">Event Preview</h2>
+                    <div class="ratio ratio-16x9">
+                        <video autoplay muted loop controls class="rounded">
+                            <source src="astro.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TC07: Buttons & Form Components -->
+            <section id="register" class="card mb-4 border-info-subtle shadow-lg">
+                <div class="card-body">
+                    <h2 class="h4 mb-4 border-start border-info border-4 ps-2">Registration Form</h2>
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Full Name</label>
+                            <input type="text" class="form-control" placeholder="John Doe" required>
+                        </div>
+
+                        <div class="row g-3 mb-3">
+                            <div class="col-md-6">
+                                <label class="form-label">Email Address</label>
+                                <input type="email" class="form-control" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Date of Event</label>
+                                <input type="date" class="form-control" required>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label d-block">Experience Level</label>
+                            <select class="form-select">
+                                <option>Beginner</option>
+                                <option>Intermediate</option>
+                                <option>Advanced</option>
+                            </select>
+                        </div>
+
+                        <!-- TC07: Styled Bootstrap Button -->
+                        <button type="submit" class="btn btn-info w-100 fw-bold py-2 mt-3 shadow">Register for Stellar Nights</button>
+                    </form>
+                </div>
+            </section>
+
+        </div>
+    </div>
+</main>
+
+<footer class="text-center py-4 bg-black text-secondary mt-5">
+    <p class="mb-0">© 2026 Stellar Nights | Experiment 3 - Bootstrap Website</p>
+</footer>
+
+<!-- TC01: Bootstrap 5.3.3 JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
